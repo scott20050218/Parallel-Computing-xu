@@ -1,8 +1,8 @@
-### **Project Proposal: Parallel Punctuation Analyzer**
+### **Project Proposal: Parallel Place ~~（Punctuation）~~ Analyzer**
 
 #### **1. Project Name**
 
-**PunctuationAnalyzer**
+**PlaceAnalyzer ~~（PunctuationAnalyzer）~~**
 
 #### **2. Team Members & Team Name**
 
@@ -11,13 +11,13 @@ Team Name: P.B group
 
 #### **3. Problem Statement**
 
-Analyze the frequency and distribution patterns of punctuation usage across large volumes of text files
+Analyze the frequency and distribution patterns of Place ~~punctuation~~ usage across large volumes of history text files
 
-Assist linguists, writers, and editors in understanding punctuation conventions within writing styles
+The Relationship Between Geographic Coordinates and History
 
 #### **4. Project Goals**
 
-Implementing a High-Performance Punctuation Analysis System
+Implementing a High-Performance Place ~~Punctuation~~ Analysis System
 
 Supports processing text data at the GB/TB level
 
@@ -28,7 +28,7 @@ Supports processing text data at the GB/TB level
 
    Distribute massive text files across multiple computing nodes
 
-   Each node independently compiles punctuation statistics for local files
+   Each node independently compiles Place ~~Punctuation~~ statistics for local files
 
    Master node aggregates statistical results from all nodes
 
