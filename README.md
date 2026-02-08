@@ -23,7 +23,7 @@ The project employs a **Producer-Consumer model** with a **`concurrent.futures.T
 ## Features
 
 - **High-Performance Parallel Processing**: Leverages multi-core CPUs, achieving processing speeds several times faster than single-threaded approaches.
-- **Structured Outputs**: Analysis results are exported in **JSON** and **CSV** formats for easy integration and further analysis.
+- **Structured Outputs**: Analysis results are exported in **JSON** formats for easy integration and further analysis.
 
 ## Output Results Explained
 
@@ -87,19 +87,19 @@ Run `merge_results.py` to combine all per-thread reports into a single global re
 
 ## Configuration & Customization
 
-You can adjust the analysis behavior by modifying the `config.py` file:
-
-```python
 # Parallel Processing Settings
-WORKER_THREADS = 8  # Number of worker threads in the pool. Typically 1-2x CPU core count.
-CHUNK_SIZE = 10000  # Number of log lines processed per thread chunk.
+
+WORKER_THREADS = 8 # Number of worker threads in the pool. Typically 1-2x CPU core count.
+CHUNK_SIZE = 10000 # Number of log lines processed per thread chunk.
 
 # Analysis Options
-TOP_N = 50  # Number of items displayed in rankings (e.g., Top IPs, Top URLs)
-CRAWLER_USER_AGENT_KEYWORDS = ['bot', 'crawler', 'spider']  # Keywords to identify crawlers
-SLOW_REQUEST_THRESHOLD_MS = 5000  # Threshold (ms) to define a slow request
+
+TOP_N = 50 # Number of items displayed in rankings (e.g., Top IPs, Top URLs)
 
 # Path Configuration
-GEOIP_DATABASE_PATH = './geolite/GeoLite2-City.mmdb'
+
 OUTPUT_DIR = './results'
+
+```
+
 ```
