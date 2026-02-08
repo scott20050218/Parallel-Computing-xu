@@ -8,9 +8,9 @@ This project is a high-performance Apache web server log analysis tool built on 
 
 The project focuses on three main analytical goals:
 
-1.  ** Visitor Analysis**: Identify frequent visitors, analyze their geographical distribution, and detect crawler or proxy traffic.
-2.  ** Popular Content Analysis**: Discover the most frequently accessed URLs, API endpoints, and the distribution of various file resources.
-3.  ** Error Monitoring**: Monitor HTTP status code distributions, quickly pinpoint client and server errors, and track specific erroneous requests.
+1.  **Visitor Analysis**: Identify frequent visitors, analyze their geographical distribution, and detect crawler or proxy traffic.
+2.  **Popular Content Analysis**: Discover the most frequently accessed URLs, API endpoints, and the distribution of various file resources.
+3.  **Error Monitoring**: Monitor HTTP status code distributions, quickly pinpoint client and server errors, and track specific erroneous requests.
 
 ### Technical Core: Thread Pool-Based Parallel Architecture
 
