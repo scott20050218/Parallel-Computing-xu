@@ -23,33 +23,63 @@ The project employs a **Producer-Consumer model** with a **`concurrent.futures.T
 
 ## Output Results Explained 📁
 
-After running, you will find the following structured files in the `results/` directory:
+After running `log_analyzer.py`, you will find the following structured files in the `results/` directory:
 
-### 1. Comprehensive Report (`report_YYYYMMDD_HHMMSS.json`)
-A **JSON** format summary report containing all analysis dimensions, structured as follows:
+### 1. Per-Thread Reports (`report_YYYYMMDD_HHMMSS_thread_N.json`)
+
+Each worker thread writes its own JSON report. The number of files equals the number of threads (e.g., 4 threads → 4 files). Each report has the same structure:
+
 ```json
 {
+  "thread_id": 0,
   "summary": {
-    "total_requests": 100000,
-    "unique_visitors": 1520,
-    "crawler_traffic_ratio": 0.15,
-    "error_rate": 0.02
+    "total_requests": 14111,
+    "unique_visitors": 1507,
+    "error_count": 10335,
+    "error_rate": 0.7324
   },
-  "visitors": { ... },  // Detailed visitor analysis
-  "content": { ... },   // Detailed content analysis
-  "errors": { ... }     // Detailed error analysis
+  "visitors": {
+    "top_ips": [{"ip": "192.168.1.1", "count": 100}, ...]
+  },
+  "content": {
+    "top_urls": [{"url": "/path", "count": 50}, ...]
+  },
+  "errors": {
+    "by_level": {"error": 1000, "notice": 500},
+    "sample": [{"ip": "...", "url": "...", "msg": "..."}, ...]
+  }
 }
 ```
 
-### 2. Detailed Data Files (`*.csv`)
-For in-depth analysis using spreadsheet or database tools, the system generates several **CSV** files:
+### 2. Merged Report (`merged_report.json`)
 
-| Filename | Content Description | Example Columns |
-| :--- | :--- | :--- |
-| **`top_ips_<timestamp>.csv`** | **Top N Most Frequent Visitor IPs** | `IP, Requests, Country, Is_Crawler` |
-| **`top_urls_<timestamp>.csv`** | **Top N Most Accessed URLs/APIs** | `URL, Request_Count, Type (e.g., API, Page, Image)` |
-| **`errors_detail_<timestamp>.csv`** | **List of Specific Erroneous Requests** | `IP, URL, Status_Code, Time, User_Agent` |
-| **`status_code_summary_<timestamp>.csv`** | **HTTP Status Code Distribution Statistics** | `Status_Group (e.g., 2xx), Count, Percentage` |
+Run `merge_results.py` to combine all per-thread reports into a single global report:
+
+```json
+{
+  "source_threads": [0, 1, 2, 3],
+  "summary": {
+    "total_requests": 52004,
+    "unique_visitors": 5124,
+    "error_count": 38081,
+    "error_rate": 0.7323
+  },
+  "visitors": { "top_ips": [...] },
+  "content": { "top_urls": [...] },
+  "errors": { "by_level": {...}, "sample": [...] }
+}
+```
+
+| Field | Description |
+| :--- | :--- |
+| **`summary.total_requests`** | Total log entries processed |
+| **`summary.unique_visitors`** | Count of distinct IP addresses |
+| **`summary.error_count`** | Number of error-level log entries |
+| **`summary.error_rate`** | Fraction of entries marked as error |
+| **`visitors.top_ips`** | Top N most frequent visitor IPs |
+| **`content.top_urls`** | Top N most referenced URLs/paths |
+| **`errors.by_level`** | Log level distribution (error, notice, etc.) |
+| **`errors.sample`** | Sample error entries for inspection |
 
 ## Configuration & Customization
 
