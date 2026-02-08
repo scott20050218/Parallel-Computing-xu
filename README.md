@@ -5,13 +5,17 @@
 This project is a high-performance Apache web server log analysis tool built on **Python parallel computing technology**. It is designed to rapidly process massive log files (from MB to GB scale) and extract key business and operational insights.
 
 ### Core Analysis Objectives
+
 The project focuses on three main analytical goals:
+
 1.  ** Visitor Analysis**: Identify frequent visitors, analyze their geographical distribution, and detect crawler or proxy traffic.
 2.  ** Popular Content Analysis**: Discover the most frequently accessed URLs, API endpoints, and the distribution of various file resources.
 3.  ** Error Monitoring**: Monitor HTTP status code distributions, quickly pinpoint client and server errors, and track specific erroneous requests.
 
 ### Technical Core: Thread Pool-Based Parallel Architecture
+
 The project employs a **Producer-Consumer model** with a **`concurrent.futures.ThreadPoolExecutor`** thread pool to create an efficient parallel processing architecture, significantly speeding up I/O-intensive log processing tasks.
+
 - **Parallel Reading & Parsing**: Multiple worker threads process different chunks of log data simultaneously.
 - **Efficient Resource Utilization**: Managed by a thread pool to avoid the overhead of frequent thread creation/destruction.
 - **Result Aggregation**: Each thread performs preliminary counting independently, with the main thread efficiently merging results for a final global analysis.
@@ -21,7 +25,7 @@ The project employs a **Producer-Consumer model** with a **`concurrent.futures.T
 - **High-Performance Parallel Processing**: Leverages multi-core CPUs, achieving processing speeds several times faster than single-threaded approaches.
 - **Structured Outputs**: Analysis results are exported in **JSON** and **CSV** formats for easy integration and further analysis.
 
-## Output Results Explained 📁
+## Output Results Explained
 
 After running `log_analyzer.py`, you will find the following structured files in the `results/` directory:
 
@@ -70,20 +74,21 @@ Run `merge_results.py` to combine all per-thread reports into a single global re
 }
 ```
 
-| Field | Description |
-| :--- | :--- |
-| **`summary.total_requests`** | Total log entries processed |
-| **`summary.unique_visitors`** | Count of distinct IP addresses |
-| **`summary.error_count`** | Number of error-level log entries |
-| **`summary.error_rate`** | Fraction of entries marked as error |
-| **`visitors.top_ips`** | Top N most frequent visitor IPs |
-| **`content.top_urls`** | Top N most referenced URLs/paths |
-| **`errors.by_level`** | Log level distribution (error, notice, etc.) |
-| **`errors.sample`** | Sample error entries for inspection |
+| Field                         | Description                                  |
+| :---------------------------- | :------------------------------------------- |
+| **`summary.total_requests`**  | Total log entries processed                  |
+| **`summary.unique_visitors`** | Count of distinct IP addresses               |
+| **`summary.error_count`**     | Number of error-level log entries            |
+| **`summary.error_rate`**      | Fraction of entries marked as error          |
+| **`visitors.top_ips`**        | Top N most frequent visitor IPs              |
+| **`content.top_urls`**        | Top N most referenced URLs/paths             |
+| **`errors.by_level`**         | Log level distribution (error, notice, etc.) |
+| **`errors.sample`**           | Sample error entries for inspection          |
 
 ## Configuration & Customization
 
 You can adjust the analysis behavior by modifying the `config.py` file:
+
 ```python
 # Parallel Processing Settings
 WORKER_THREADS = 8  # Number of worker threads in the pool. Typically 1-2x CPU core count.
