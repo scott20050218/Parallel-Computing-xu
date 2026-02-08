@@ -1,0 +1,436 @@
+{
+  "thread_id": 1,
+  "summary": {
+    "total_requests": 14088,
+    "unique_visitors": 2200,
+    "error_count": 10388,
+    "error_rate": 0.7374
+  },
+  "visitors": {
+    "top_ips": [
+      {
+        "ip": "unknown",
+        "count": 5384
+      },
+      {
+        "ip": "218.144.240.75",
+        "count": 444
+      },
+      {
+        "ip": "210.245.233.251",
+        "count": 392
+      },
+      {
+        "ip": "61.84.135.157",
+        "count": 253
+      },
+      {
+        "ip": "80.68.92.54",
+        "count": 230
+      },
+      {
+        "ip": "201.28.43.194",
+        "count": 220
+      },
+      {
+        "ip": "81.166.103.93",
+        "count": 209
+      },
+      {
+        "ip": "218.104.211.118",
+        "count": 198
+      },
+      {
+        "ip": "221.221.17.210",
+        "count": 191
+      },
+      {
+        "ip": "65.19.195.6",
+        "count": 187
+      },
+      {
+        "ip": "61.19.31.42",
+        "count": 165
+      },
+      {
+        "ip": "200.69.215.1",
+        "count": 165
+      },
+      {
+        "ip": "144.202.242.108",
+        "count": 154
+      },
+      {
+        "ip": "66.132.131.11",
+        "count": 150
+      },
+      {
+        "ip": "61.178.21.180",
+        "count": 143
+      },
+      {
+        "ip": "217.117.141.166",
+        "count": 130
+      },
+      {
+        "ip": "212.3.249.71",
+        "count": 121
+      },
+      {
+        "ip": "206.161.193.98",
+        "count": 121
+      },
+      {
+        "ip": "218.232.109.223",
+        "count": 115
+      },
+      {
+        "ip": "193.232.254.50",
+        "count": 112
+      }
+    ]
+  },
+  "content": {
+    "top_urls": [
+      {
+        "url": "/var/www/html/",
+        "count": 2665
+      },
+      {
+        "url": "workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+        "count": 1430
+      },
+      {
+        "url": "mod_jk child workerEnv in error state 5",
+        "count": 725
+      },
+      {
+        "url": "/var/www/html/blog",
+        "count": 677
+      },
+      {
+        "url": "mod_jk2 Shutting down",
+        "count": 436
+      },
+      {
+        "url": "/var/www/html/blogs",
+        "count": 403
+      },
+      {
+        "url": "/var/www/html/sumthin",
+        "count": 355
+      },
+      {
+        "url": "/var/www/html/awstats/awstats.pl",
+        "count": 354
+      },
+      {
+        "url": " script not found or unable to stat: /var/www/cgi-bin/awstats.pl",
+        "count": 346
+      },
+      {
+        "url": "/var/www/html/drupal",
+        "count": 342
+      },
+      {
+        "url": "/var/www/html/phpgroupware",
+        "count": 341
+      },
+      {
+        "url": "/var/www/html/xmlsrv",
+        "count": 331
+      },
+      {
+        "url": "/var/www/html/wordpress",
+        "count": 328
+      },
+      {
+        "url": "/var/www/html/xmlrpc",
+        "count": 327
+      },
+      {
+        "url": " script not found or unable to stat: /var/www/cgi-bin/awstats",
+        "count": 310
+      },
+      {
+        "url": "mod_jk child workerEnv in error state 6",
+        "count": 273
+      },
+      {
+        "url": "mod_jk child init 1 -2",
+        "count": 188
+      },
+      {
+        "url": "/var/www/html/bin",
+        "count": 124
+      },
+      {
+        "url": "/var/www/html/mambo",
+        "count": 117
+      },
+      {
+        "url": "/var/www/html/cache",
+        "count": 97
+      }
+    ]
+  },
+  "errors": {
+    "by_level": {
+      "error": 10388,
+      "notice": 3661,
+      "warn": 39
+    },
+    "sample": [
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats.pl",
+        "msg": " File does not exist: /var/www/html/awstats.pl"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats-cgibin",
+        "msg": " File does not exist: /var/www/html/awstats-cgibin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats-cgibin",
+        "msg": " File does not exist: /var/www/html/awstats-cgibin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/aws",
+        "msg": " File does not exist: /var/www/html/aws"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/awstats.",
+        "msg": " File does not exist: /var/www/html/awstats/awstats."
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats-cgibin",
+        "msg": " File does not exist: /var/www/html/awstats-cgibin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats-cgibin",
+        "msg": " File does not exist: /var/www/html/awstats-cgibin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/awstats.",
+        "msg": " File does not exist: /var/www/html/awstats/awstats."
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats.pl",
+        "msg": " File does not exist: /var/www/html/awstats.pl"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats-cgibin",
+        "msg": " File does not exist: /var/www/html/awstats-cgibin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/awstats.pl",
+        "msg": " File does not exist: /var/www/html/awstats/awstats.pl"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats.pl",
+        "msg": " File does not exist: /var/www/html/awstats.pl"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats-cgibin",
+        "msg": " File does not exist: /var/www/html/awstats-cgibin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/aws",
+        "msg": " File does not exist: /var/www/html/aws"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/awstats.pl",
+        "msg": " File does not exist: /var/www/html/awstats/awstats.pl"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats-cgibin",
+        "msg": " File does not exist: /var/www/html/awstats-cgibin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats.pl",
+        "msg": " File does not exist: /var/www/html/awstats.pl"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/awstats.pl",
+        "msg": " File does not exist: /var/www/html/awstats/awstats.pl"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "unknown",
+        "url": "jk2_init() Can't find child 3771 in scoreboard",
+        "msg": "jk2_init() Can't find child 3771 in scoreboard"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/awstats.",
+        "msg": " File does not exist: /var/www/html/awstats/awstats."
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "unknown",
+        "url": "mod_jk child init 1 -2",
+        "msg": "mod_jk child init 1 -2"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats-cgibin",
+        "msg": " File does not exist: /var/www/html/awstats-cgibin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/cgi-bin",
+        "msg": " File does not exist: /var/www/html/awstats/cgi-bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats/awstats.",
+        "msg": " File does not exist: /var/www/html/awstats/awstats."
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/awstats.pl",
+        "msg": " File does not exist: /var/www/html/awstats.pl"
+      },
+      {
+        "ip": "218.144.240.75",
+        "url": "/var/www/html/bin",
+        "msg": " File does not exist: /var/www/html/bin"
+      }
+    ]
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "thread_id": 0,
+  "summary": {
+    "total_requests": 14111,
+    "unique_visitors": 1507,
+    "error_count": 10335,
+    "error_rate": 0.7324
+  },
+  "visitors": {
+    "top_ips": [
+      {
+        "ip": "unknown",
+        "count": 5843
+      },
+      {
+        "ip": "218.144.240.75",
+        "count": 558
+      },
+      {
+        "ip": "211.99.203.228",
+        "count": 440
+      },
+      {
+        "ip": "193.124.133.216",
+        "count": 242
+      },
+      {
+        "ip": "210.245.233.251",
+        "count": 232
+      },
+      {
+        "ip": "66.225.203.226",
+        "count": 220
+      },
+      {
+        "ip": "69.64.38.143",
+        "count": 220
+      },
+      {
+        "ip": "200.94.105.213",
+        "count": 217
+      },
+      {
+        "ip": "81.192.114.8",
+        "count": 211
+      },
+      {
+        "ip": "66.162.153.155",
+        "count": 198
+      },
+      {
+        "ip": "64.182.1.110",
+        "count": 187
+      },
+      {
+        "ip": "83.84.145.52",
+        "count": 187
+      },
+      {
+        "ip": "202.133.98.6",
+        "count": 184
+      },
+      {
+        "ip": "62.175.253.180",
+        "count": 176
+      },
+      {
+        "ip": "69.13.179.46",
+        "count": 176
+      },
+      {
+        "ip": "213.131.241.73",
+        "count": 165
+      },
+      {
+        "ip": "210.0.196.236",
+        "count": 132
+      },
+      {
+        "ip": "216.83.140.52",
+        "count": 105
+      },
+      {
+        "ip": "209.250.116.251",
+        "count": 105
+      },
+      {
+        "ip": "82.177.96.6",
+        "count": 102
+      }
+    ]
+  },
+  "content": {
+    "top_urls": [
+      {
+        "url": "/var/www/html/",
+        "count": 2668
+      },
+      {
+        "url": "workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+        "count": 1649
+      },
+      {
+        "url": "/var/www/html/blog",
+        "count": 647
+      },
+      {
+        "url": "mod_jk child workerEnv in error state 4",
+        "count": 549
+      },
+      {
+        "url": "mod_jk child workerEnv in error state 5",
+        "count": 402
+      },
+      {
+        "url": "/var/www/html/awstats/awstats.pl",
+        "count": 385
+      },
+      {
+        "url": "mod_jk2 Shutting down",
+        "count": 378
+      },
+      {
+        "url": "mod_jk child init 1 -2",
+        "count": 373
+      },
+      {
+        "url": "/var/www/html/phpgroupware",
+        "count": 366
+      },
+      {
+        "url": " script not found or unable to stat: /var/www/cgi-bin/awstats.pl",
+        "count": 364
+      },
+      {
+        "url": "/var/www/html/wordpress",
+        "count": 362
+      },
+      {
+        "url": "/var/www/html/drupal",
+        "count": 359
+      },
+      {
+        "url": " script not found or unable to stat: /var/www/cgi-bin/awstats",
+        "count": 355
+      },
+      {
+        "url": "/var/www/html/blogs",
+        "count": 336
+      },
+      {
+        "url": "/var/www/html/sumthin",
+        "count": 317
+      },
+      {
+        "url": "/var/www/html/xmlsrv",
+        "count": 300
+      },
+      {
+        "url": "/var/www/html/xmlrpc",
+        "count": 299
+      },
+      {
+        "url": "/var/www/html/scripts/..%5c%5c..",
+        "count": 99
+      },
+      {
+        "url": "mod_jk child workerEnv in error state 6",
+        "count": 97
+      },
+      {
+        "url": "/var/www/html/cgi",
+        "count": 69
+      }
+    ]
+  },
+  "errors": {
+    "by_level": {
+      "notice": 3716,
+      "error": 10335,
+      "warn": 60
+    },
+    "sample": [
+      {
+        "ip": "unknown",
+        "url": "env.createBean2(): Factory error creating channel.jni:jni ( channel.jni, jni)",
+        "msg": "env.createBean2(): Factory error creating channel.jni:jni ( channel.jni, jni)"
+      },
+      {
+        "ip": "unknown",
+        "url": "config.update(): Can't create channel.jni:jni",
+        "msg": "config.update(): Can't create channel.jni:jni"
+      },
+      {
+        "ip": "unknown",
+        "url": "env.createBean2(): Factory error creating vm: ( vm, )",
+        "msg": "env.createBean2(): Factory error creating vm: ( vm, )"
+      },
+      {
+        "ip": "unknown",
+        "url": "config.update(): Can't create vm:",
+        "msg": "config.update(): Can't create vm:"
+      },
+      {
+        "ip": "unknown",
+        "url": "env.createBean2(): Factory error creating worker.jni:onStartup ( worker.jni, onS",
+        "msg": "env.createBean2(): Factory error creating worker.jni:onStartup ( worker.jni, onStartup)"
+      },
+      {
+        "ip": "unknown",
+        "url": "config.update(): Can't create worker.jni:onStartup",
+        "msg": "config.update(): Can't create worker.jni:onStartup"
+      },
+      {
+        "ip": "unknown",
+        "url": "env.createBean2(): Factory error creating worker.jni:onShutdown ( worker.jni, on",
+        "msg": "env.createBean2(): Factory error creating worker.jni:onShutdown ( worker.jni, onShutdown)"
+      },
+      {
+        "ip": "unknown",
+        "url": "config.update(): Can't create worker.jni:onShutdown",
+        "msg": "config.update(): Can't create worker.jni:onShutdown"
+      },
+      {
+        "ip": "unknown",
+        "url": "mod_jk child init 1 0",
+        "msg": "mod_jk child init 1 0"
+      },
+      {
+        "ip": "204.100.200.22",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "207.203.80.15",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "216.68.171.39",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "24.158.204.7",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "216.85.154.124",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "219.136.165.149",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "218.114.142.11",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "211.74.182.199",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "218.61.75.217",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "12.32.56.253",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "24.159.188.244",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "222.76.16.61",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "81.199.21.119",
+        "url": "/var/www/html/sumthin",
+        "msg": " File does not exist: /var/www/html/sumthin"
+      },
+      {
+        "ip": "unknown",
+        "url": "jk2_init() Can't find child 4057 in scoreboard",
+        "msg": "jk2_init() Can't find child 4057 in scoreboard"
+      },
+      {
+        "ip": "unknown",
+        "url": "mod_jk child init 1 -2",
+        "msg": "mod_jk child init 1 -2"
+      },
+      {
+        "ip": "unknown",
+        "url": "jk2_init() Can't find child 4058 in scoreboard",
+        "msg": "jk2_init() Can't find child 4058 in scoreboard"
+      },
+      {
+        "ip": "unknown",
+        "url": "mod_jk child init 1 -2",
+        "msg": "mod_jk child init 1 -2"
+      },
+      {
+        "ip": "219.150.171.68",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      },
+      {
+        "ip": "60.180.218.105",
+        "url": "/var/www/html/",
+        "msg": " Directory index forbidden by rule: /var/www/html/"
+      }
+    ]
+  }
+}
